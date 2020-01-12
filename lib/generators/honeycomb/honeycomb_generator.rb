@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "rails/generators"
 
 ##
@@ -31,7 +29,7 @@ class HoneycombGenerator < Rails::Generators::Base
             send_file.action_controller
             send_data.action_controller
             deliver.action_mailer
-          ].freeze
+          ]
         end
       RUBY
     end

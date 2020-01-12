@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "rails/railtie"
 require "honeycomb/integrations/rails"
 

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "forwardable"
 require "libhoney"
 require "honeycomb/beeline/version"
@@ -19,7 +17,7 @@ module Honeycomb
     redis
     sequel
     sinatra
-  ].freeze
+  ]
 
   class << self
     extend Forwardable

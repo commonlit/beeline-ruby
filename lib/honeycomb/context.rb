@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Honeycomb
   # Stores the current span and trace context
   class Context

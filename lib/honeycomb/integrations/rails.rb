@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "honeycomb/integrations/active_support"
 require "honeycomb/integrations/rack"
 require "honeycomb/integrations/warden"

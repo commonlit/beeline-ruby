@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Honeycomb
   # Methods for extracing common warden/devise fields from a rack env hash
   module Warden
@@ -10,9 +8,9 @@ module Honeycomb
       last_name
       created_at
       id
-    ].freeze
+    ]
 
-    SCOPE_PATTERN = /^warden\.user\.([^.]+)\.key$/.freeze
+    SCOPE_PATTERN = /^warden\.user\.([^.]+)\.key$/
 
     def extract_user_information(env)
       warden = env["warden"]

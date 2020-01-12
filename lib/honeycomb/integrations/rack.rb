@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "rack"
 require "honeycomb/integrations/warden"
 
@@ -15,7 +13,7 @@ module Honeycomb
       ["REMOTE_ADDR", "request.remote_addr"],
       ["HTTP_USER_AGENT", "request.header.user_agent"],
       ["rack.url_scheme", "request.protocol"],
-    ].freeze
+    ]
 
     attr_reader :app, :client
 

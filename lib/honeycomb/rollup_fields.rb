@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module Honeycomb
   ##
   # Functionality for including 'rollup_fields'. Which are fields that can be
