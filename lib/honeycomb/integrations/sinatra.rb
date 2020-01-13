@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "sinatra"
 require "honeycomb/integrations/rack"
 require "honeycomb/integrations/warden"

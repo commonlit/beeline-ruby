@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "aws-sdk-core"
 
 module Honeycomb
@@ -333,7 +335,7 @@ module Honeycomb
       # @see https://github.com/aws/aws-sdk-ruby/blob/379d338406873b0f4b53f118c83fe40761e297ab/gems/aws-sdk-s3/lib/aws-sdk-s3/plugins/s3_signer.rb#L102-L182
       # @see https://github.com/aws/aws-sdk-ruby/blob/4c40f6e67e763a0f392ba5b1449254426b68a600/aws-sdk-core/lib/aws-sdk-core/plugins/s3_request_signer.rb#L81-L153
       class S3Redirect
-        REGION_TAG = %r{<Region>(.+?)</Region>}
+        REGION_TAG = %r{<Region>(.+?)</Region>}.freeze
 
         def initialize(context)
           @context = context

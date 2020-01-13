@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "redis"
 
 module Honeycomb
@@ -227,7 +229,7 @@ module Honeycomb
         "\t" => "\\t",
         "\a" => "\\a",
         "\b" => "\\b",
-      }
+      }.freeze
 
       def escape_with_backslash?(char)
         BACKSLASHES.key?(char)
